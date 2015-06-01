@@ -1,7 +1,7 @@
 # Python
 my python demos
 # FileBackuper
-这是一个文件备份的python脚本，暂时只适用于linux下。
+这是一个文件备份的python脚本，现更新后既可用于windows,也可用于linux。
 使用方法：运行脚本
           ->输入文件路径，如：/home/voyager/桌面/。(不输入则备份/home/文件夹)
           ->将会询问是否备份以下目录
