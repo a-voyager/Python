@@ -1,18 +1,18 @@
-#!usr/bin/python
+#!usr'+os.sep+'bin'+os.sep+'python
 #Filename:backup.py
 import os
 import time
 print 'begin backuping...'
 input = raw_input('please input the source dir>>')
-source = ['/home/'+os.uname()[1]+'/']
+source = [''+os.sep+'home'+os.sep+''+os.uname()[1]+''+os.sep+'']
 if not len(input)==0:
     source[0]=input
-destination = '/home/'+os.uname()[1]+'/backup'
-print 'are you sure to backup these dir:(y/n)'
+destination = ''+os.sep+'home'+os.sep+''+os.uname()[1]+''+os.sep+'backup'
+print 'are you sure to backup these dir:(y'+os.sep+'n)'
 for i in source:
     print i
 tmp=raw_input('>>')
-if (tmp == 'n' ) | (tmp=='N'):
+if (tmp != 'y' ) & (tmp != 'Y'):
     print 'stopped'
     exit()
 if not os.path.exists(destination):
